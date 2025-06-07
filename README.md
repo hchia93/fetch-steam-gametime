@@ -1,0 +1,12 @@
+# Fetch Steam GameTime
+Fetch Steam GameTime is a simple tool to extract hours spent on your owned game.
+
+![fetch](fetch.png)
+
+## How to use
+Simply launch `start_server.bat` and you will see your own list:
+
+![index](index.png)
+
+## Authors
+Author : [@hchia93](https://www.github.com/hchia93)

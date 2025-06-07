@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steam Playtime Summary</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Steam Playtime Summary</h1>
+      <div class="controls">
+        <select id="sortSelect" onchange="sortGames()">
+          <option value="playtime">Sort by Playtime</option>
+          <option value="name">Sort by Name</option>
+        </select>
+        <button id="refreshBtn" onclick="location.reload()" title="Refresh data">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M23 4v6h-6"></path>
+            <path d="M1 20v-6h6"></path>
+            <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="gameList" class="game-list">
+      <!-- Games will be loaded here -->
+    </div>
+  </div>
+
+  <script>
+    let gamesData = [];
+
+    function renderGames(games) {
+      const container = document.getElementById('gameList');
+      container.innerHTML = '';
+      games.forEach((game, index) => {
+        const gameDiv = createGameElement(game, index);
+        container.appendChild(gameDiv);
+      });
+    }
+
+    function createGameElement(game, index) {
+      const gameDiv = document.createElement('div');
+      gameDiv.className = 'game-item';
+      
+      const numberSpan = document.createElement('span');
+      numberSpan.className = 'game-number';
+      numberSpan.textContent = `${index + 1}.`;
+      
+      const gameContent = document.createElement('div');
+      gameContent.className = 'game-content';
+      
+      if (game.img_logo_url) {
+        const img = document.createElement('img');
+        img.src = game.img_logo_url;
+        img.alt = game.name;
+        img.className = 'game-image';
+        img.onerror = function() {
+          this.style.display = 'none';
+        };
+        gameContent.appendChild(img);
+      } else {
+        const noImage = document.createElement('div');
+        noImage.className = 'no-image';
+        noImage.textContent = game.name.charAt(0);
+        gameContent.appendChild(noImage);
+      }
+      
+      const infoDiv = document.createElement('div');
+      infoDiv.className = 'game-info';
+      
+      const titleSpan = document.createElement('span');
+      titleSpan.className = 'game-title';
+      titleSpan.textContent = game.name;
+      
+      infoDiv.appendChild(titleSpan);
+      gameContent.appendChild(infoDiv);
+      
+      const playtimeSpan = document.createElement('span');
+      playtimeSpan.className = 'game-playtime';
+      playtimeSpan.textContent = `${game.playtime_hours} hours`;
+      
+      gameDiv.appendChild(numberSpan);
+      gameDiv.appendChild(gameContent);
+      gameDiv.appendChild(playtimeSpan);
+      
+      return gameDiv;
+    }
+
+    function sortGames() {
+      const sorted = [...gamesData];
+      const sortMethod = document.getElementById('sortSelect').value;
+      switch (sortMethod) {
+        case 'playtime':
+          sorted.sort((a, b) => b.playtime_hours - a.playtime_hours);
+          break;
+        case 'name':
+          sorted.sort((a, b) => a.name.localeCompare(b.name));
+          break;
+      }
+      renderGames(sorted);
+    }
+
+    function showError(message) {
+      const errorDiv = document.createElement('div');
+      errorDiv.id = 'error-message';
+      errorDiv.textContent = message;
+      errorDiv.style.display = 'block';
+      document.querySelector('.container').insertBefore(errorDiv, document.getElementById('gameList'));
+    }
+
+    // Load and display games
+    fetch('steam_playtime.json')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(games => {
+        if (!Array.isArray(games) || games.length === 0) {
+          throw new Error('No games data found');
+        }
+        gamesData = games;
+        sortGames(); // default sort
+      })
+      .catch(error => {
+        console.error('Error loading games:', error);
+        showError('Error loading games data. Please make sure steam_playtime.json exists and contains valid data.');
+      });
+  </script>
+</body>
+</html>

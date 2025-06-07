@@ -1,0 +1,954 @@
+[
+    {
+        "name": "Insaniquarium! Deluxe",
+        "playtime_hours": 0.7
+    },
+    {
+        "name": "Bastion",
+        "playtime_hours": 1.3
+    },
+    {
+        "name": "Castle Crashers",
+        "playtime_hours": 0.2
+    },
+    {
+        "name": "Torchlight II",
+        "playtime_hours": 5.5
+    },
+    {
+        "name": "Rocketbirds: Hardboiled Chicken",
+        "playtime_hours": 1.4
+    },
+    {
+        "name": "Spiral Knights",
+        "playtime_hours": 89.5
+    },
+    {
+        "name": "Magicka: Wizard Wars",
+        "playtime_hours": 0.5
+    },
+    {
+        "name": "Prison Architect",
+        "playtime_hours": 8.2
+    },
+    {
+        "name": "BioShock Infinite",
+        "playtime_hours": 1.0
+    },
+    {
+        "name": "Monaco",
+        "playtime_hours": 10.3
+    },
+    {
+        "name": "Foul Play",
+        "playtime_hours": 0.1
+    },
+    {
+        "name": "Papers, Please",
+        "playtime_hours": 0.3
+    },
+    {
+        "name": "BELOW",
+        "playtime_hours": 30.2
+    },
+    {
+        "name": "The Inner World",
+        "playtime_hours": 9.0
+    },
+    {
+        "name": "Darkest Dungeon\u00ae",
+        "playtime_hours": 26.9
+    },
+    {
+        "name": "FINAL FANTASY VIII",
+        "playtime_hours": 2.0
+    },
+    {
+        "name": "Starbound",
+        "playtime_hours": 0.1
+    },
+    {
+        "name": "Cuphead",
+        "playtime_hours": 20.0
+    },
+    {
+        "name": "Hero Siege",
+        "playtime_hours": 10.4
+    },
+    {
+        "name": "BADLAND: Game of the Year Edition",
+        "playtime_hours": 0.1
+    },
+    {
+        "name": "Crea",
+        "playtime_hours": 13.6
+    },
+    {
+        "name": "Duelyst",
+        "playtime_hours": 0.1
+    },
+    {
+        "name": "Pit People",
+        "playtime_hours": 13.2
+    },
+    {
+        "name": "FINAL FANTASY XIII",
+        "playtime_hours": 98.5
+    },
+    {
+        "name": "Crawl",
+        "playtime_hours": 0.3
+    },
+    {
+        "name": "Enter the Gungeon",
+        "playtime_hours": 40.6
+    },
+    {
+        "name": "Rain World",
+        "playtime_hours": 1.0
+    },
+    {
+        "name": "Dig or Die",
+        "playtime_hours": 0.7
+    },
+    {
+        "name": "A Good Snowman Is Hard To Build",
+        "playtime_hours": 4.1
+    },
+    {
+        "name": "The Flame in the Flood",
+        "playtime_hours": 0.9
+    },
+    {
+        "name": "Frostpunk",
+        "playtime_hours": 5.3
+    },
+    {
+        "name": "Jotun: Valhalla Edition",
+        "playtime_hours": 0.1
+    },
+    {
+        "name": "Vagante",
+        "playtime_hours": 1.2
+    },
+    {
+        "name": "Children of Morta",
+        "playtime_hours": 9.4
+    },
+    {
+        "name": "Yoku's Island Express",
+        "playtime_hours": 14.0
+    },
+    {
+        "name": "Anoxemia",
+        "playtime_hours": 0.3
+    },
+    {
+        "name": "Sunless Sea",
+        "playtime_hours": 20.3
+    },
+    {
+        "name": "Subterrain",
+        "playtime_hours": 0.7
+    },
+    {
+        "name": "Boring Man - Online Tactical Stickman Combat",
+        "playtime_hours": 0.1
+    },
+    {
+        "name": "The Bug Butcher",
+        "playtime_hours": 0.5
+    },
+    {
+        "name": "Sheltered",
+        "playtime_hours": 0.2
+    },
+    {
+        "name": "Titan Souls",
+        "playtime_hours": 1.3
+    },
+    {
+        "name": "FINAL FANTASY X/X-2 HD Remaster",
+        "playtime_hours": 52.5
+    },
+    {
+        "name": "Clicker Heroes",
+        "playtime_hours": 120.8
+    },
+    {
+        "name": "Roguelands",
+        "playtime_hours": 23.6
+    },
+    {
+        "name": "Hollow Knight",
+        "playtime_hours": 43.5
+    },
+    {
+        "name": "Sniper Ghost Warrior 3",
+        "playtime_hours": 0.1
+    },
+    {
+        "name": "Don't Starve",
+        "playtime_hours": 74.4
+    },
+    {
+        "name": "Aegis Defenders",
+        "playtime_hours": 2.2
+    },
+    {
+        "name": "Don't Starve Together",
+        "playtime_hours": 20.9
+    },
+    {
+        "name": "Dead by Daylight",
+        "playtime_hours": 630.8
+    },
+    {
+        "name": "Relic Hunters Zero: Remix",
+        "playtime_hours": 0.2
+    },
+    {
+        "name": "Dungeon Souls",
+        "playtime_hours": 0.1
+    },
+    {
+        "name": "Ori and the Blind Forest",
+        "playtime_hours": 10.7
+    },
+    {
+        "name": "Ori and the Blind Forest: Definitive Edition",
+        "playtime_hours": 0.4
+    },
+    {
+        "name": "Songs for a Hero - Definitive Edition",
+        "playtime_hours": 0.5
+    },
+    {
+        "name": "Crashlands",
+        "playtime_hours": 92.2
+    },
+    {
+        "name": "TSIOQUE",
+        "playtime_hours": 5.2
+    },
+    {
+        "name": "Wuppo - Definitive Edition",
+        "playtime_hours": 4.2
+    },
+    {
+        "name": "Stardew Valley",
+        "playtime_hours": 101.9
+    },
+    {
+        "name": "Wallpaper Engine",
+        "playtime_hours": 295.1
+    },
+    {
+        "name": "DARQ",
+        "playtime_hours": 0.3
+    },
+    {
+        "name": "Iron Snout",
+        "playtime_hours": 0.5
+    },
+    {
+        "name": "Lost Castle",
+        "playtime_hours": 7.1
+    },
+    {
+        "name": "Hidden Folks",
+        "playtime_hours": 7.3
+    },
+    {
+        "name": "Stories: The Path of Destinies",
+        "playtime_hours": 17.8
+    },
+    {
+        "name": "Wizard of Legend",
+        "playtime_hours": 6.4
+    },
+    {
+        "name": "Oxygen Not Included",
+        "playtime_hours": 47.8
+    },
+    {
+        "name": "Riverbond",
+        "playtime_hours": 0.7
+    },
+    {
+        "name": "Nine Parchments",
+        "playtime_hours": 2.6
+    },
+    {
+        "name": "Beholder",
+        "playtime_hours": 6.9
+    },
+    {
+        "name": "Night in the Woods",
+        "playtime_hours": 7.1
+    },
+    {
+        "name": "Kingdom: Classic",
+        "playtime_hours": 7.6
+    },
+    {
+        "name": "Kingdom: New Lands",
+        "playtime_hours": 3.8
+    },
+    {
+        "name": "Voodoo Garden",
+        "playtime_hours": 70.5
+    },
+    {
+        "name": "Sentry Knight Tactics",
+        "playtime_hours": 21.6
+    },
+    {
+        "name": "Celeste",
+        "playtime_hours": 0.0
+    },
+    {
+        "name": "Streets of Rogue",
+        "playtime_hours": 8.2
+    },
+    {
+        "name": "Hidden Through Time",
+        "playtime_hours": 2.3
+    },
+    {
+        "name": "Guacamelee! 2",
+        "playtime_hours": 0.6
+    },
+    {
+        "name": "Owlboy",
+        "playtime_hours": 15.1
+    },
+    {
+        "name": "Lara Croft GO",
+        "playtime_hours": 18.9
+    },
+    {
+        "name": "Wonder Boy: The Dragon's Trap",
+        "playtime_hours": 1.6
+    },
+    {
+        "name": "Deep Rock Galactic",
+        "playtime_hours": 0.4
+    },
+    {
+        "name": "Hade",
+        "playtime_hours": 0.1
+    },
+    {
+        "name": "TUNIC",
+        "playtime_hours": 17.5
+    },
+    {
+        "name": "Kingdoms and Castles",
+        "playtime_hours": 30.4
+    },
+    {
+        "name": "Dungeon of the ENDLESS\u2122",
+        "playtime_hours": 17.9
+    },
+    {
+        "name": "Sunless Skies",
+        "playtime_hours": 8.5
+    },
+    {
+        "name": "Graveyard Keeper",
+        "playtime_hours": 0.3
+    },
+    {
+        "name": "ATOMINE",
+        "playtime_hours": 3.2
+    },
+    {
+        "name": "Moonlighter",
+        "playtime_hours": 17.2
+    },
+    {
+        "name": "Masters of Anima",
+        "playtime_hours": 2.4
+    },
+    {
+        "name": "while True: learn()",
+        "playtime_hours": 4.5
+    },
+    {
+        "name": "The Swords of Ditto: Mormo's Curse",
+        "playtime_hours": 0.1
+    },
+    {
+        "name": "\u5f02\u5e38 | Exception",
+        "playtime_hours": 0.2
+    },
+    {
+        "name": "Stoneshard",
+        "playtime_hours": 12.9
+    },
+    {
+        "name": "Risk of Rain 2",
+        "playtime_hours": 27.6
+    },
+    {
+        "name": "Slay the Spire",
+        "playtime_hours": 6.0
+    },
+    {
+        "name": "UnderMine",
+        "playtime_hours": 21.2
+    },
+    {
+        "name": "Rise of Industry",
+        "playtime_hours": 0.3
+    },
+    {
+        "name": "Heroes of Hammerwatch",
+        "playtime_hours": 58.7
+    },
+    {
+        "name": "Regions Of Ruin",
+        "playtime_hours": 0.4
+    },
+    {
+        "name": "GRIS",
+        "playtime_hours": 7.0
+    },
+    {
+        "name": "Bad North",
+        "playtime_hours": 0.5
+    },
+    {
+        "name": "Sundered: Eldritch Edition",
+        "playtime_hours": 22.1
+    },
+    {
+        "name": "DeathComing",
+        "playtime_hours": 15.2
+    },
+    {
+        "name": "Hob",
+        "playtime_hours": 5.0
+    },
+    {
+        "name": "Baba Is You",
+        "playtime_hours": 9.3
+    },
+    {
+        "name": "Drake Hollow",
+        "playtime_hours": 1.1
+    },
+    {
+        "name": "Tales of Arise",
+        "playtime_hours": 68.0
+    },
+    {
+        "name": "Forager",
+        "playtime_hours": 79.7
+    },
+    {
+        "name": "Mutant Year Zero: Road to Eden",
+        "playtime_hours": 0.8
+    },
+    {
+        "name": "Blasphemous",
+        "playtime_hours": 0.4
+    },
+    {
+        "name": "Neon Abyss",
+        "playtime_hours": 20.3
+    },
+    {
+        "name": "Lumote: The Mastermote Chronicles",
+        "playtime_hours": 0.5
+    },
+    {
+        "name": "The Sojourn",
+        "playtime_hours": 0.6
+    },
+    {
+        "name": "SteamWorld Quest: Hand of Gilgamech",
+        "playtime_hours": 1.1
+    },
+    {
+        "name": "Monster Sanctuary",
+        "playtime_hours": 4.7
+    },
+    {
+        "name": "LUNA The Shadow Dust",
+        "playtime_hours": 0.1
+    },
+    {
+        "name": "Control Ultimate Edition",
+        "playtime_hours": 8.5
+    },
+    {
+        "name": "Cultist Simulator",
+        "playtime_hours": 14.0
+    },
+    {
+        "name": "Noita",
+        "playtime_hours": 1.2
+    },
+    {
+        "name": "Death's Door",
+        "playtime_hours": 17.6
+    },
+    {
+        "name": "Warhammer 40,000: Mechanicus",
+        "playtime_hours": 5.0
+    },
+    {
+        "name": "Simmiland",
+        "playtime_hours": 2.7
+    },
+    {
+        "name": "Glass Masquerade 2: Illusions",
+        "playtime_hours": 8.6
+    },
+    {
+        "name": "INMOST",
+        "playtime_hours": 0.0
+    },
+    {
+        "name": "Sparklite",
+        "playtime_hours": 9.2
+    },
+    {
+        "name": "Nanotale - Typing Chronicles",
+        "playtime_hours": 1.0
+    },
+    {
+        "name": "CARRION",
+        "playtime_hours": 6.1
+    },
+    {
+        "name": "Space Robinson",
+        "playtime_hours": 7.3
+    },
+    {
+        "name": "Mini Healer",
+        "playtime_hours": 1.8
+    },
+    {
+        "name": "Creaks",
+        "playtime_hours": 0.6
+    },
+    {
+        "name": "Omno",
+        "playtime_hours": 3.3
+    },
+    {
+        "name": "Eastward",
+        "playtime_hours": 39.3
+    },
+    {
+        "name": "Autonauts",
+        "playtime_hours": 0.6
+    },
+    {
+        "name": "Disney's Hercules",
+        "playtime_hours": 0.4
+    },
+    {
+        "name": "Book of Demons",
+        "playtime_hours": 7.0
+    },
+    {
+        "name": "NieR:Automata\u2122",
+        "playtime_hours": 1.8
+    },
+    {
+        "name": "ScourgeBringer",
+        "playtime_hours": 4.3
+    },
+    {
+        "name": "Dreamscaper",
+        "playtime_hours": 0.1
+    },
+    {
+        "name": "Spring Falls",
+        "playtime_hours": 0.8
+    },
+    {
+        "name": "ISLANDERS",
+        "playtime_hours": 0.7
+    },
+    {
+        "name": "A Monster's Expedition",
+        "playtime_hours": 0.5
+    },
+    {
+        "name": "Ori and the Will of the Wisps",
+        "playtime_hours": 4.3
+    },
+    {
+        "name": "Divide by Sheep",
+        "playtime_hours": 3.9
+    },
+    {
+        "name": "OCTOPATH TRAVELER",
+        "playtime_hours": 126.8
+    },
+    {
+        "name": "The Wild at Heart",
+        "playtime_hours": 16.1
+    },
+    {
+        "name": "Fall Guys",
+        "playtime_hours": 7.3
+    },
+    {
+        "name": "MO:Astray",
+        "playtime_hours": 1.1
+    },
+    {
+        "name": "ASCIIDENT",
+        "playtime_hours": 0.2
+    },
+    {
+        "name": "Mini Motorways",
+        "playtime_hours": 7.2
+    },
+    {
+        "name": "Dwerve",
+        "playtime_hours": 1.1
+    },
+    {
+        "name": "Ember Knights",
+        "playtime_hours": 11.0
+    },
+    {
+        "name": "Unpacking",
+        "playtime_hours": 4.3
+    },
+    {
+        "name": "Hades II",
+        "playtime_hours": 677.0
+    },
+    {
+        "name": "Hades",
+        "playtime_hours": 115.2
+    },
+    {
+        "name": "Skul: The Hero Slayer",
+        "playtime_hours": 0.6
+    },
+    {
+        "name": "Bonfire Peaks",
+        "playtime_hours": 12.9
+    },
+    {
+        "name": "Wizard with a Gun",
+        "playtime_hours": 40.9
+    },
+    {
+        "name": "Horizon Zero Dawn\u2122 Complete Edition",
+        "playtime_hours": 84.8
+    },
+    {
+        "name": "Carto",
+        "playtime_hours": 0.9
+    },
+    {
+        "name": "reky",
+        "playtime_hours": 55.5
+    },
+    {
+        "name": "Shovel Knight Pocket Dungeon",
+        "playtime_hours": 2.4
+    },
+    {
+        "name": "Pumpkin Jack",
+        "playtime_hours": 0.5
+    },
+    {
+        "name": "Ether Loop",
+        "playtime_hours": 1.0
+    },
+    {
+        "name": "Turnip Boy Commits Tax Evasion",
+        "playtime_hours": 4.8
+    },
+    {
+        "name": "Pyre",
+        "playtime_hours": 0.0
+    },
+    {
+        "name": "Rain on Your Parade",
+        "playtime_hours": 1.1
+    },
+    {
+        "name": "Rogue Legacy 2",
+        "playtime_hours": 28.6
+    },
+    {
+        "name": "Melvor Idle",
+        "playtime_hours": 2.2
+    },
+    {
+        "name": "Loop Hero",
+        "playtime_hours": 18.8
+    },
+    {
+        "name": "Pronty",
+        "playtime_hours": 0.0
+    },
+    {
+        "name": "Ship of Fools",
+        "playtime_hours": 3.5
+    },
+    {
+        "name": "Townscaper",
+        "playtime_hours": 0.4
+    },
+    {
+        "name": "Archvale",
+        "playtime_hours": 15.1
+    },
+    {
+        "name": "Voidigo",
+        "playtime_hours": 1.1
+    },
+    {
+        "name": "TOEM",
+        "playtime_hours": 6.9
+    },
+    {
+        "name": "Greak: Memories of Azur",
+        "playtime_hours": 0.1
+    },
+    {
+        "name": "Source of Madness",
+        "playtime_hours": 0.1
+    },
+    {
+        "name": "Stray",
+        "playtime_hours": 2.1
+    },
+    {
+        "name": "Risk of Rain Returns",
+        "playtime_hours": 29.5
+    },
+    {
+        "name": "Kingdom Rush Vengeance",
+        "playtime_hours": 3.8
+    },
+    {
+        "name": "Cats Organized Neatly",
+        "playtime_hours": 2.3
+    },
+    {
+        "name": "No Rest for the Wicked",
+        "playtime_hours": 44.2
+    },
+    {
+        "name": "Crash Bandicoot\u2122 4: It\u2019s About Time",
+        "playtime_hours": 0.9
+    },
+    {
+        "name": "Crashlands 2",
+        "playtime_hours": 26.1
+    },
+    {
+        "name": "Labyrinth City: Pierre the Maze Detective",
+        "playtime_hours": 2.4
+    },
+    {
+        "name": "Nobody Saves the World",
+        "playtime_hours": 24.3
+    },
+    {
+        "name": "Dorfromantik",
+        "playtime_hours": 2.8
+    },
+    {
+        "name": "Cozy Grove",
+        "playtime_hours": 108.5
+    },
+    {
+        "name": "Hammerwatch II",
+        "playtime_hours": 44.4
+    },
+    {
+        "name": "LEGO\u00ae Builder's Journey",
+        "playtime_hours": 3.5
+    },
+    {
+        "name": "BIOMUTANT",
+        "playtime_hours": 13.2
+    },
+    {
+        "name": "High On Life",
+        "playtime_hours": 2.2
+    },
+    {
+        "name": "100 hidden cats",
+        "playtime_hours": 0.2
+    },
+    {
+        "name": "V Rising",
+        "playtime_hours": 0.6
+    },
+    {
+        "name": "Core Keeper",
+        "playtime_hours": 0.6
+    },
+    {
+        "name": "A Little to the Left",
+        "playtime_hours": 4.2
+    },
+    {
+        "name": "Minishoot' Adventures",
+        "playtime_hours": 4.1
+    },
+    {
+        "name": "Geometry Arena 2",
+        "playtime_hours": 1.0
+    },
+    {
+        "name": "SWORN",
+        "playtime_hours": 0.1
+    },
+    {
+        "name": "ZERO Sievert",
+        "playtime_hours": 0.8
+    },
+    {
+        "name": "DSX",
+        "playtime_hours": 116.8
+    },
+    {
+        "name": "Dungeon Drafters",
+        "playtime_hours": 0.8
+    },
+    {
+        "name": "Forspoken",
+        "playtime_hours": 13.6
+    },
+    {
+        "name": "TRIANGLE STRATEGY",
+        "playtime_hours": 0.6
+    },
+    {
+        "name": "The Knight Witch",
+        "playtime_hours": 0.2
+    },
+    {
+        "name": "Windblown",
+        "playtime_hours": 1.3
+    },
+    {
+        "name": "Brotato",
+        "playtime_hours": 2.1
+    },
+    {
+        "name": "Stacklands",
+        "playtime_hours": 12.2
+    },
+    {
+        "name": "Garden Galaxy",
+        "playtime_hours": 3.2
+    },
+    {
+        "name": "Shotgun King: The Final Checkmate",
+        "playtime_hours": 1.4
+    },
+    {
+        "name": "To The Core",
+        "playtime_hours": 6.3
+    },
+    {
+        "name": "Rotwood",
+        "playtime_hours": 0.0
+    },
+    {
+        "name": "Repetendium",
+        "playtime_hours": 0.9
+    },
+    {
+        "name": "Soulstone Survivors",
+        "playtime_hours": 80.2
+    },
+    {
+        "name": "Cult of the Lamb",
+        "playtime_hours": 51.1
+    },
+    {
+        "name": "Rogue: Genesia",
+        "playtime_hours": 8.3
+    },
+    {
+        "name": "Nordic Ashes",
+        "playtime_hours": 756.9
+    },
+    {
+        "name": "Magicraft",
+        "playtime_hours": 0.7
+    },
+    {
+        "name": "Runic",
+        "playtime_hours": 5.3
+    },
+    {
+        "name": "From Space",
+        "playtime_hours": 19.2
+    },
+    {
+        "name": "OCTOPATH TRAVELER II",
+        "playtime_hours": 62.9
+    },
+    {
+        "name": "Wizard of Legend 2",
+        "playtime_hours": 0.5
+    },
+    {
+        "name": "Halls of Torment",
+        "playtime_hours": 38.9
+    },
+    {
+        "name": "Thronefall",
+        "playtime_hours": 2.5
+    },
+    {
+        "name": "Monster Hunter Wilds",
+        "playtime_hours": 91.5
+    },
+    {
+        "name": "Hogwarts Legacy",
+        "playtime_hours": 3.8
+    },
+    {
+        "name": "Death Must Die",
+        "playtime_hours": 247.4
+    },
+    {
+        "name": "Deep Rock Galactic: Survivor",
+        "playtime_hours": 151.3
+    },
+    {
+        "name": "Slime 3K: Rise Against Despot",
+        "playtime_hours": 1.0
+    },
+    {
+        "name": "Ultros",
+        "playtime_hours": 0.1
+    },
+    {
+        "name": "Sephiria",
+        "playtime_hours": 8.4
+    },
+    {
+        "name": "Party Animals",
+        "playtime_hours": 0.2
+    },
+    {
+        "name": "Granblue Fantasy: Relink",
+        "playtime_hours": 39.0
+    },
+    {
+        "name": "The Spell Brigade",
+        "playtime_hours": 10.3
+    }
+]

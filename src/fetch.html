@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fetch Steam Playtime</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #1b2838;
+            color: #c6d4df;
+        }
+        .container {
+            background-color: #2a475e;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            margin-top: 16px;
+        }
+        h1 {
+            color: #66c0f4;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #66c0f4;
+        }
+        input[type="text"] {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px 14px;
+            border: 1px solid #66c0f4;
+            border-radius: 4px;
+            background-color: #1b2838;
+            color: #c6d4df;
+            font-size: 16px;
+        }
+        button {
+            background-color: #66c0f4;
+            color: #1b2838;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #1999ff;
+        }
+        button:disabled {
+            background-color: #4c5b6b;
+            cursor: not-allowed;
+        }
+        #status {
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 4px;
+            display: none;
+        }
+        .error {
+            background-color: #c83737;
+            color: white;
+        }
+        .success {
+            background-color: #4caf50;
+            color: white;
+        }
+        .loading {
+            background-color: #2a475e;
+            color: #66c0f4;
+        }
+        .help-text {
+            font-size: 14px;
+            color: #8f98a0;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fetch Steam Playtime</h1>
+        <div class="form-group">
+            <label for="steamApiKey">Steam API Key:</label>
+            <input type="text" id="steamApiKey" placeholder="Enter your Steam Web API Key" required>
+            <div class="help-text">
+                You can get your Steam API key at: <a href="https://steamcommunity.com/dev/apikey" target="_blank" style="color:#66c0f4;">steamcommunity.com/dev/apikey</a>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="steamId">Steam64 ID:</label>
+            <input type="text" id="steamId" placeholder="Enter your Steam64 ID" pattern="[0-9]{17}" required>
+            <div class="help-text">
+                Your Steam64 ID is a 17-digit number. You can find it by:
+                <ol>
+                    <li>Going to your Steam profile</li>
+                    <li>Looking at the URL: steamcommunity.com/profiles/<strong>76561198XXXXXXXXX</strong></li>
+                    <li>The number at the end is your Steam64 ID</li>
+                </ol>
+            </div>
+        </div>
+        <button id="fetchButton" onclick="fetchData()">Fetch Playtime Data</button>
+        <div id="status"></div>
+    </div>
+
+    <script>
+        const statusDiv = document.getElementById('status');
+        const fetchButton = document.getElementById('fetchButton');
+        const steamIdInput = document.getElementById('steamId');
+        const steamApiKeyInput = document.getElementById('steamApiKey');
+
+        function showStatus(message, type) {
+            statusDiv.textContent = message;
+            statusDiv.className = type;
+            statusDiv.style.display = 'block';
+        }
+
+        function setLoading(isLoading) {
+            fetchButton.disabled = isLoading;
+            if (isLoading) {
+                fetchButton.textContent = 'Fetching...';
+                showStatus('Fetching your Steam playtime data...', 'loading');
+            } else {
+                fetchButton.textContent = 'Fetch Playtime Data';
+            }
+        }
+
+        async function fetchData() {
+            const steamId = steamIdInput.value.trim();
+            const steamApiKey = steamApiKeyInput.value.trim();
+            
+            if (!steamApiKey) {
+                showStatus('Please enter your Steam API Key', 'error');
+                return;
+            }
+            if (!steamId.match(/^[0-9]{17}$/)) {
+                showStatus('Please enter a valid 17-digit Steam64 ID', 'error');
+                return;
+            }
+
+            setLoading(true);
+
+            try {
+                console.log('Sending request to /fetch_data with Steam ID and API Key');
+                const response = await fetch('/fetch_data', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ steamId, steamApiKey })
+                });
+
+                const responseText = await response.text();
+                let data;
+                try {
+                    data = JSON.parse(responseText);
+                } catch (e) {
+                    showStatus('Error: Server returned invalid JSON response', 'error');
+                    return;
+                }
+
+                if (data.success) {
+                    showStatus('Data fetched successfully! Redirecting...', 'success');
+                    if (data.redirect) {
+                        setTimeout(() => {
+                            window.location.href = data.redirect;
+                        }, 1500);
+                    } else {
+                        setTimeout(() => {
+                            window.location.href = '/';
+                        }, 1500);
+                    }
+                } else {
+                    showStatus(data.error || 'Failed to fetch data', 'error');
+                }
+            } catch (error) {
+                showStatus('Error: ' + error.message, 'error');
+            } finally {
+                setLoading(false);
+            }
+        }
+
+        // Enable/disable button based on input
+        steamIdInput.addEventListener('input', () => {
+            fetchButton.disabled = !steamIdInput.value.match(/^[0-9]{17}$/) || !steamApiKeyInput.value.trim();
+        });
+        steamApiKeyInput.addEventListener('input', () => {
+            fetchButton.disabled = !steamIdInput.value.match(/^[0-9]{17}$/) || !steamApiKeyInput.value.trim();
+        });
+    </script>
+</body>
+</html> 
