@@ -1,4 +1,6 @@
 # Fetch Steam GameTime
+![Steam API](https://img.shields.io/badge/Steam_API-Supported-2a475e?style=flat-square&logo=steam&logoColor=white)
+
 Fetch Steam GameTime is a simple tool to extract hours spent on your owned game.
 
 ![fetch](fetch.png)
